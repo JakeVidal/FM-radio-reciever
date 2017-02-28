@@ -1,0 +1,4 @@
+1 - Design reciever circuit schematic
+2 - Design audio amplifier circuit schematic
+3 - Simulate design in LTspice
+4 - Route PCB

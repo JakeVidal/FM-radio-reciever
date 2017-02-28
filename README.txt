@@ -1,0 +1,1 @@
+This project is an FM radio receiver that will amplify and play audio that it receives. The design will include an analog tuner to select the frequency for listening and a volume knob for the speaker.
