@@ -124,17 +124,6 @@ $EndComp
 Wire Wire Line
 	3550 2950 3550 3100
 $Comp
-L +9V #PWR?
-U 1 1 58B7A577
-P 850 2850
-F 0 "#PWR?" H 850 2700 50  0001 C CNN
-F 1 "+9V" H 850 2990 50  0000 C CNN
-F 2 "" H 850 2850 50  0000 C CNN
-F 3 "" H 850 2850 50  0000 C CNN
-	1    850  2850
-	1    0    0    -1  
-$EndComp
-$Comp
 L LM555N U?
 U 1 1 58B7B139
 P 2100 3850
@@ -185,8 +174,6 @@ Wire Wire Line
 Wire Wire Line
 	2700 4050 2700 3400
 Wire Wire Line
-	2700 3400 850  3400
-Wire Wire Line
 	2100 3400 2100 3450
 Wire Wire Line
 	2600 3650 3000 3650
@@ -213,7 +200,7 @@ L R R?
 U 1 1 58B90E86
 P 3000 3500
 F 0 "R?" V 3080 3500 50  0000 C CNN
-F 1 "1k" V 3000 3500 50  0000 C CNN
+F 1 "500" V 3000 3500 50  0000 C CNN
 F 2 "" V 2930 3500 50  0000 C CNN
 F 3 "" H 3000 3500 50  0000 C CNN
 	1    3000 3500
@@ -222,9 +209,6 @@ $EndComp
 Wire Wire Line
 	3000 3350 3000 3300
 Connection ~ 3000 3300
-Wire Wire Line
-	850  3400 850  2850
-Connection ~ 850  2950
 Connection ~ 2100 4650
 Wire Wire Line
 	1600 3300 3250 3300
@@ -232,8 +216,6 @@ Wire Wire Line
 	3550 3500 3550 4650
 Connection ~ 3550 4650
 Connection ~ 3550 2950
-Wire Wire Line
-	2700 2950 850  2950
 $Comp
 L R R?
 U 1 1 58BA4CE2
@@ -246,7 +228,7 @@ F 3 "" H 4850 3300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1300 4650 6000 4650
+	950  4650 6000 4650
 Connection ~ 1300 4650
 Connection ~ 1300 4350
 $Comp
@@ -254,7 +236,7 @@ L ZENER D?
 U 1 1 58BA5DC9
 P 4850 3900
 F 0 "D?" H 4850 4000 50  0000 C CNN
-F 1 "15.6V" H 4850 3800 50  0000 C CNN
+F 1 "5.7V" H 4850 3800 50  0000 C CNN
 F 2 "" H 4850 3900 50  0000 C CNN
 F 3 "" H 4850 3900 50  0000 C CNN
 	1    4850 3900
@@ -311,4 +293,54 @@ $EndComp
 Wire Wire Line
 	6000 4650 6000 3400
 Connection ~ 4850 4650
+$Comp
+L +BATT #PWR?
+U 1 1 58BCC4F1
+P 950 2950
+F 0 "#PWR?" H 950 2800 50  0001 C CNN
+F 1 "+BATT" H 950 3090 50  0000 C CNN
+F 2 "" H 950 2950 50  0000 C CNN
+F 3 "" H 950 2950 50  0000 C CNN
+	1    950  2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 58BCC793
+P 950 4450
+F 0 "R?" V 1030 4450 50  0000 C CNN
+F 1 "1k" V 950 4450 50  0000 C CNN
+F 2 "" V 880 4450 50  0000 C CNN
+F 3 "" H 950 4450 50  0000 C CNN
+	1    950  4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 58BCC810
+P 950 4050
+F 0 "R?" V 1030 4050 50  0000 C CNN
+F 1 "110" V 950 4050 50  0000 C CNN
+F 2 "" V 880 4050 50  0000 C CNN
+F 3 "" H 950 4050 50  0000 C CNN
+	1    950  4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  4200 950  4300
+Wire Wire Line
+	2600 4250 2600 3850
+Wire Wire Line
+	950  4250 2600 4250
+Wire Wire Line
+	950  4600 950  4650
+Connection ~ 950  4250
+Wire Wire Line
+	950  3900 950  2950
+Connection ~ 950  2950
+Wire Wire Line
+	2700 3400 950  3400
+Wire Wire Line
+	950  2950 2700 2950
+Connection ~ 950  3400
 $EndSCHEMATC
