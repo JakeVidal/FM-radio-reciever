@@ -76,8 +76,20 @@ S 5500 1200 1350 500
 U 58BF8D0F
 F0 "Audio system" 60
 F1 "Audio system.sch" 60
+F2 "5V" I L 5500 1300 60 
+F3 "Signal" I L 5500 1600 60 
+F4 "GND" I L 5500 1450 60 
 $EndSheet
 $Sheet
 S 3500 1200 1350 500 
+U 58BF8C95
+F0 "Signal receiver system" 60
+F1 "Signal receiver system.sch" 60
 $EndSheet
+Wire Wire Line
+	5500 1300 5350 1300
+Wire Wire Line
+	5500 1450 5350 1450
+Wire Wire Line
+	5500 1600 5350 1600
 $EndSCHEMATC
