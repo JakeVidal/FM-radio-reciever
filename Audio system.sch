@@ -66,50 +66,6 @@ F 3 "" H 7150 3750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LM358 U?
-U 1 1 58C0E91B
-P 3250 2300
-F 0 "U?" H 3200 2500 50  0000 L CNN
-F 1 "LM358" H 3200 2050 50  0000 L CNN
-F 2 "" H 3250 2300 50  0000 C CNN
-F 3 "" H 3250 2300 50  0000 C CNN
-	1    3250 2300
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R?
-U 1 1 58C0EAE1
-P 2100 2200
-F 0 "R?" V 2200 2200 50  0000 C CNN
-F 1 "82Ω" V 2000 2200 50  0000 C CNN
-F 2 "" V 2030 2200 50  0000 C CNN
-F 3 "" H 2100 2200 50  0000 C CNN
-	1    2100 2200
-	0    1    1    0   
-$EndComp
-$Comp
-L C C?
-U 1 1 58C0EBCE
-P 2600 2550
-F 0 "C?" H 2625 2650 50  0000 L CNN
-F 1 "100nF" H 2625 2450 50  0000 L CNN
-F 2 "" H 2638 2400 50  0000 C CNN
-F 3 "" H 2600 2550 50  0000 C CNN
-	1    2600 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C?
-U 1 1 58C0EE00
-P 3950 2300
-F 0 "C?" V 4050 2400 50  0000 L CNN
-F 1 "100nF" V 3800 2200 50  0000 L CNN
-F 2 "" H 3988 2150 50  0000 C CNN
-F 3 "" H 3950 2300 50  0000 C CNN
-	1    3950 2300
-	0    1    1    0   
-$EndComp
-$Comp
 L R R?
 U 1 1 58C0EE89
 P 4400 2550
@@ -145,12 +101,12 @@ $EndComp
 $Comp
 L C C?
 U 1 1 58C12919
-P 2600 1650
-F 0 "C?" V 2700 1750 50  0000 L CNN
-F 1 "10uF" V 2450 1600 50  0000 L CNN
-F 2 "" H 2638 1500 50  0000 C CNN
-F 3 "" H 2600 1650 50  0000 C CNN
-	1    2600 1650
+P 4650 1850
+F 0 "C?" V 4750 1950 50  0000 L CNN
+F 1 "10uF" V 4500 1800 50  0000 L CNN
+F 2 "" H 4688 1700 50  0000 C CNN
+F 3 "" H 4650 1850 50  0000 C CNN
+	1    4650 1850
 	0    1    1    0   
 $EndComp
 $Comp
@@ -198,23 +154,6 @@ F 3 "" H 6850 3350 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2950 2400 2950 2700
-Wire Wire Line
-	2950 2700 3550 2700
-Wire Wire Line
-	3550 2700 3550 2300
-Wire Wire Line
-	3150 2600 3150 4050
-Wire Wire Line
-	2600 2400 2600 2200
-Wire Wire Line
-	2250 2200 2950 2200
-Connection ~ 2600 2200
-Wire Wire Line
-	2600 2700 2600 4050
-Wire Wire Line
-	3550 2300 3800 2300
-Wire Wire Line
 	4100 2300 4900 2300
 Wire Wire Line
 	4400 2300 4400 2400
@@ -239,8 +178,6 @@ Wire Wire Line
 Wire Wire Line
 	6850 4050 6850 3850
 Wire Wire Line
-	1650 4050 6850 4050
-Wire Wire Line
 	5200 3300 5200 4050
 Connection ~ 5200 4050
 Wire Wire Line
@@ -253,25 +190,33 @@ Wire Wire Line
 Connection ~ 6250 4050
 Connection ~ 4900 4050
 Connection ~ 4400 4050
-Connection ~ 3150 4050
-Wire Wire Line
-	2750 1650 5500 1650
-Wire Wire Line
-	3150 1650 3150 2000
-Wire Wire Line
-	5500 1650 5500 2900
-Connection ~ 3150 1650
-Wire Wire Line
-	1650 1650 2450 1650
-Wire Wire Line
-	1950 2200 1650 2200
 NoConn ~ 5600 3500
 NoConn ~ 5700 3500
-Text HLabel 1650 1650 0    60   Input ~ 0
+Text HLabel 3550 1850 0    60   Input ~ 0
 5V
-Text HLabel 1650 2200 0    60   Input ~ 0
+Text HLabel 3550 2300 0    60   Input ~ 0
 Signal
-Connection ~ 2600 4050
-Text HLabel 1650 4050 0    60   Input ~ 0
+Text HLabel 3550 4050 0    60   Input ~ 0
 GND
+$Comp
+L C C?
+U 1 1 58C0EE00
+P 3950 2300
+F 0 "C?" V 4050 2400 50  0000 L CNN
+F 1 "100nF" V 3800 2200 50  0000 L CNN
+F 2 "" H 3988 2150 50  0000 C CNN
+F 3 "" H 3950 2300 50  0000 C CNN
+	1    3950 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4800 1850 5500 1850
+Wire Wire Line
+	5500 1850 5500 2900
+Wire Wire Line
+	4500 1850 3550 1850
+Wire Wire Line
+	3800 2300 3550 2300
+Wire Wire Line
+	3550 4050 6850 4050
 $EndSCHEMATC
