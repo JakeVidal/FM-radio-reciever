@@ -101,12 +101,12 @@ $EndComp
 $Comp
 L C C?
 U 1 1 58C12919
-P 4650 1850
-F 0 "C?" V 4750 1950 50  0000 L CNN
-F 1 "10uF" V 4500 1800 50  0000 L CNN
-F 2 "" H 4688 1700 50  0000 C CNN
-F 3 "" H 4650 1850 50  0000 C CNN
-	1    4650 1850
+P 2050 1850
+F 0 "C?" V 2150 1950 50  0000 L CNN
+F 1 "10uF" V 1900 1800 50  0000 L CNN
+F 2 "" H 2088 1700 50  0000 C CNN
+F 3 "" H 2050 1850 50  0000 C CNN
+	1    2050 1850
 	0    1    1    0   
 $EndComp
 $Comp
@@ -192,11 +192,11 @@ Connection ~ 4900 4050
 Connection ~ 4400 4050
 NoConn ~ 5600 3500
 NoConn ~ 5700 3500
-Text HLabel 3550 1850 0    60   Input ~ 0
+Text HLabel 1550 1850 0    60   Input ~ 0
 5V
-Text HLabel 3550 2300 0    60   Input ~ 0
+Text HLabel 1550 2200 0    60   Input ~ 0
 Signal
-Text HLabel 3550 4050 0    60   Input ~ 0
+Text HLabel 1550 4050 0    60   Input ~ 0
 GND
 $Comp
 L C C?
@@ -210,13 +210,69 @@ F 3 "" H 3950 2300 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4800 1850 5500 1850
+	2200 1850 5500 1850
 Wire Wire Line
 	5500 1850 5500 2900
 Wire Wire Line
-	4500 1850 3550 1850
-Wire Wire Line
 	3800 2300 3550 2300
 Wire Wire Line
-	3550 4050 6850 4050
+	1550 4050 6850 4050
+$Comp
+L LM358 U?
+U 1 1 58C3988F
+P 3250 2300
+F 0 "U?" H 3200 2500 50  0000 L CNN
+F 1 "LM358" H 3200 2050 50  0000 L CNN
+F 2 "" H 3250 2300 50  0000 C CNN
+F 3 "" H 3250 2300 50  0000 C CNN
+	1    3250 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 2000 3150 1850
+Wire Wire Line
+	3150 2600 3150 4050
+$Comp
+L R R?
+U 1 1 58C3B342
+P 2050 2200
+F 0 "R?" V 2150 2200 50  0000 C CNN
+F 1 "82Ω" V 1950 2200 50  0000 C CNN
+F 2 "" V 1980 2200 50  0000 C CNN
+F 3 "" H 2050 2200 50  0000 C CNN
+	1    2050 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 58C3B3B0
+P 2550 2550
+F 0 "C?" H 2575 2650 50  0000 L CNN
+F 1 "100nF" H 2575 2450 50  0000 L CNN
+F 2 "" H 2588 2400 50  0000 C CNN
+F 3 "" H 2550 2550 50  0000 C CNN
+	1    2550 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 2400 2950 2700
+Wire Wire Line
+	2950 2700 3600 2700
+Connection ~ 3600 2300
+Wire Wire Line
+	3600 2700 3600 2300
+Wire Wire Line
+	2200 2200 2950 2200
+Wire Wire Line
+	2550 2400 2550 2200
+Connection ~ 2550 2200
+Wire Wire Line
+	2550 2700 2550 4050
+Connection ~ 3150 4050
+Wire Wire Line
+	1550 1850 1900 1850
+Connection ~ 3150 1850
+Wire Wire Line
+	1900 2200 1550 2200
+Connection ~ 2550 4050
 $EndSCHEMATC
