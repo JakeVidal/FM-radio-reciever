@@ -46,12 +46,12 @@ $EndDescr
 $Comp
 L TRANSFO4 T?
 U 1 1 58E18FBD
-P 3500 3300
-F 0 "T?" H 3500 3550 50  0000 C CNN
-F 1 "TRANSFO4" H 3500 3000 50  0000 C CNN
-F 2 "" H 3500 3300 50  0000 C CNN
-F 3 "" H 3500 3300 50  0000 C CNN
-	1    3500 3300
+P 3550 3300
+F 0 "T?" H 3550 3550 50  0000 C CNN
+F 1 "TRANSFO4" H 3550 3000 50  0000 C CNN
+F 2 "" H 3550 3300 50  0000 C CNN
+F 3 "" H 3550 3300 50  0000 C CNN
+	1    3550 3300
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -99,12 +99,6 @@ F 3 "" H 4300 3100 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Connection ~ 4100 3100
-Wire Wire Line
-	3900 3500 3900 3900
-Wire Wire Line
-	3900 3300 3950 3300
-Wire Wire Line
-	3950 3300 3950 4150
 Connection ~ 4100 3500
 Wire Wire Line
 	4550 3300 4550 4150
@@ -131,20 +125,43 @@ Wire Wire Line
 Connection ~ 4100 3900
 Wire Wire Line
 	4500 3900 4450 3900
+Text Notes 4000 4300 0    60   ~ 0
+Tunable carrier frequency\n
+Text Notes 1800 3350 0    60   Italic 0
+Antenna attached to a resonant\ncircuit at the carrier frequency\n
+Text HLabel 5600 3100 2    60   Input ~ 0
+Signal
 Wire Wire Line
-	4150 3100 3900 3100
+	4000 3300 4000 4150
 Wire Wire Line
-	3900 3900 4150 3900
+	3950 3500 3950 4950
+Wire Wire Line
+	3950 3300 4000 3300
+Wire Wire Line
+	3950 3100 4150 3100
+Wire Wire Line
+	3950 3900 4150 3900
+Text HLabel 5600 3500 2    60   Input ~ 0
+GND
+Wire Wire Line
+	3150 4950 5500 4950
+Connection ~ 3950 3900
+Wire Wire Line
+	3150 4950 3150 3500
+Connection ~ 3950 4950
 Wire Wire Line
 	4600 3500 4100 3500
 Wire Wire Line
 	4450 3100 4600 3100
 Wire Wire Line
 	4600 3300 4550 3300
-Text Notes 3700 4300 0    60   ~ 0
-Tunable carrier frequency\n
-Text Notes 1800 3350 0    60   Italic 0
-Antenna attached to a resonant\ncircuit at the carrier frequency\n
-Text Notes 5200 3350 0    60   Italic 0
-Output signal connected to \nseries of amplifiers and filters\n
+Wire Wire Line
+	5400 3500 5600 3500
+Wire Wire Line
+	5400 3100 5600 3100
+Wire Wire Line
+	5500 4950 5500 3500
+Connection ~ 5500 3500
+Text HLabel 1300 3100 0    60   Input ~ 0
+5V
 $EndSCHEMATC

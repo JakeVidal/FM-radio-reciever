@@ -55,17 +55,6 @@ F 3 "" H 5700 3400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SPEAKER SP?
-U 1 1 58BF989B
-P 7150 3750
-F 0 "SP?" H 7150 3400 50  0000 C CNN
-F 1 "SPEAKER" H 7050 3500 50  0000 C CNN
-F 2 "" H 7150 3750 50  0000 C CNN
-F 3 "" H 7150 3750 50  0000 C CNN
-	1    7150 3750
-	1    0    0    -1  
-$EndComp
-$Comp
 L R R?
 U 1 1 58C0EE89
 P 4400 2550
@@ -145,13 +134,13 @@ $EndComp
 $Comp
 L C C?
 U 1 1 58C13032
-P 6850 3350
-F 0 "C?" H 6700 3450 50  0000 L CNN
-F 1 "100nF" H 6600 3250 50  0000 L CNN
-F 2 "" H 6888 3200 50  0000 C CNN
-F 3 "" H 6850 3350 50  0000 C CNN
-	1    6850 3350
-	-1   0    0    1   
+P 7000 3200
+F 0 "C?" V 6900 3000 50  0000 L CNN
+F 1 "100nF" V 7150 3050 50  0000 L CNN
+F 2 "" H 7038 3050 50  0000 C CNN
+F 3 "" H 7000 3200 50  0000 C CNN
+	1    7000 3200
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	4100 2300 4900 2300
@@ -169,14 +158,10 @@ Wire Wire Line
 Wire Wire Line
 	5050 3100 5200 3100
 Wire Wire Line
-	6850 3650 6850 3500
-Wire Wire Line
 	6850 3200 5900 3200
 Connection ~ 6250 3200
 Wire Wire Line
 	6250 3500 6250 3650
-Wire Wire Line
-	6850 4050 6850 3850
 Wire Wire Line
 	5200 3300 5200 4050
 Connection ~ 5200 4050
@@ -187,7 +172,6 @@ Wire Wire Line
 	5500 3650 5500 3500
 Wire Wire Line
 	6250 3950 6250 4050
-Connection ~ 6250 4050
 Connection ~ 4900 4050
 Connection ~ 4400 4050
 NoConn ~ 5600 3500
@@ -215,8 +199,6 @@ Wire Wire Line
 	5500 1850 5500 2900
 Wire Wire Line
 	3800 2300 3550 2300
-Wire Wire Line
-	1550 4050 6850 4050
 $Comp
 L LM358 U?
 U 1 1 58C3988F
@@ -275,4 +257,10 @@ Connection ~ 3150 1850
 Wire Wire Line
 	1900 2200 1550 2200
 Connection ~ 2550 4050
+Wire Wire Line
+	6250 4050 1550 4050
+Wire Wire Line
+	7150 3200 7600 3200
+Text HLabel 7600 3200 2    60   Input ~ 0
+Audio
 $EndSCHEMATC
