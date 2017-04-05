@@ -70,6 +70,7 @@ F1 "Signal receiver system.sch" 60
 F2 "Signal" I R 6450 2950 60 
 F3 "GND" I L 5100 2800 60 
 F4 "5V" I L 5100 2650 60 
+F5 "Antenna" I L 5100 2950 60 
 $EndSheet
 $Comp
 L SPST SW?
@@ -159,4 +160,9 @@ Wire Wire Line
 	4950 3400 4950 2800
 Wire Wire Line
 	4950 2800 5100 2800
+Wire Wire Line
+	5100 2950 5000 2950
+Wire Wire Line
+	5000 2950 5000 2100
+NoConn ~ 5000 2100
 $EndSCHEMATC

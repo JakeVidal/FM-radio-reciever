@@ -127,7 +127,7 @@ Wire Wire Line
 	4500 3900 4450 3900
 Text Notes 4000 4300 0    60   ~ 0
 Tunable carrier frequency\n
-Text Notes 1800 3350 0    60   Italic 0
+Text Notes 1950 2400 0    60   Italic 0
 Antenna attached to a resonant\ncircuit at the carrier frequency\n
 Text HLabel 5600 3100 2    60   Input ~ 0
 Signal
@@ -144,7 +144,7 @@ Wire Wire Line
 Text HLabel 5600 3500 2    60   Input ~ 0
 GND
 Wire Wire Line
-	3150 4950 5500 4950
+	2400 4950 5500 4950
 Connection ~ 3950 3900
 Wire Wire Line
 	3150 4950 3150 3500
@@ -164,4 +164,57 @@ Wire Wire Line
 Connection ~ 5500 3500
 Text HLabel 1300 3100 0    60   Input ~ 0
 5V
+$Comp
+L C C?
+U 1 1 58E453DD
+P 2700 3250
+F 0 "C?" H 2725 3350 50  0000 L CNN
+F 1 "C" H 2725 3150 50  0000 L CNN
+F 2 "" H 2738 3100 50  0000 C CNN
+F 3 "" H 2700 3250 50  0000 C CNN
+	1    2700 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L?
+U 1 1 58E4545F
+P 2400 3400
+F 0 "L?" V 2350 3400 50  0000 C CNN
+F 1 "INDUCTOR" V 2500 3400 50  0000 C CNN
+F 2 "" H 2400 3400 50  0000 C CNN
+F 3 "" H 2400 3400 50  0000 C CNN
+	1    2400 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 58E455BD
+P 2400 4100
+F 0 "R?" V 2480 4100 50  0000 C CNN
+F 1 "R" V 2400 4100 50  0000 C CNN
+F 2 "" V 2330 4100 50  0000 C CNN
+F 3 "" H 2400 4100 50  0000 C CNN
+	1    2400 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 3400 2700 3700
+Wire Wire Line
+	2700 3700 2400 3700
+Wire Wire Line
+	2400 3700 2400 3950
+Wire Wire Line
+	2000 3100 3150 3100
+Wire Wire Line
+	2000 2700 2000 3100
+Wire Wire Line
+	2400 4250 2400 4950
+Connection ~ 3150 4950
+Wire Wire Line
+	3150 3500 2700 3500
+Connection ~ 2700 3500
+Text HLabel 1300 2700 0    60   Input ~ 0
+Antenna
+Wire Wire Line
+	1300 2700 2000 2700
 $EndSCHEMATC
