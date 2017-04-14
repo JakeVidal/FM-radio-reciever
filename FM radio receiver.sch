@@ -161,8 +161,18 @@ Wire Wire Line
 Wire Wire Line
 	4950 2800 5100 2800
 Wire Wire Line
-	5100 2950 5000 2950
+	5000 2950 5100 2950
 Wire Wire Line
-	5000 2950 5000 2100
-NoConn ~ 5000 2100
+	5000 1300 5000 2950
+Wire Wire Line
+	4900 3400 4900 2300
+Wire Wire Line
+	4900 2300 4950 2300
+Wire Wire Line
+	4950 2300 4950 1300
+Connection ~ 4900 3400
+NoConn ~ 5000 1300
+NoConn ~ 4950 1300
+Text Notes 5100 1300 0    60   ~ 0
+Antenna\n
 $EndSCHEMATC
