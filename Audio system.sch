@@ -263,4 +263,6 @@ Wire Wire Line
 	7150 3200 7600 3200
 Text HLabel 7600 3200 2    60   Input ~ 0
 Audio
+Text Notes 3250 3100 0    60   ~ 0
+logrithmic potentiometer
 $EndSCHEMATC
