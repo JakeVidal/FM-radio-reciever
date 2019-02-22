@@ -43,22 +43,223 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 5500 2750 2    60   Input ~ 0
+Text HLabel 8350 2600 2    60   Input ~ 0
 Signal
-Text HLabel 4400 3150 0    60   Input ~ 0
+Text HLabel 4000 4250 0    60   Input ~ 0
 GND
-Text HLabel 4400 3050 0    60   Input ~ 0
+Text HLabel 3950 1950 0    60   Input ~ 0
 5V
-Text HLabel 4400 2750 0    60   Input ~ 0
+Text HLabel 3900 2900 0    60   Input ~ 0
 Antenna
-Text Notes 4500 2950 0    60   ~ 0
-IC FM demodulator
-Wire Notes Line
-	4400 2650 4400 3200
-Wire Notes Line
-	4400 3200 5500 3200
-Wire Notes Line
-	5500 3200 5500 2650
-Wire Notes Line
-	5500 2650 4400 2650
+$Comp
+L CTRIM C?
+U 1 1 5C6F4DE5
+P 4500 3800
+F 0 "C?" H 4560 3720 50  0000 C CNN
+F 1 "1.5pF" H 4620 3660 50  0000 C CNN
+F 2 "" H 4500 3800 50  0000 C CNN
+F 3 "" H 4500 3800 50  0000 C CNN
+	1    4500 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5C6F4E38
+P 4500 3350
+F 0 "C?" H 4525 3450 50  0000 L CNN
+F 1 "1pF" H 4525 3250 50  0000 L CNN
+F 2 "" H 4538 3200 50  0000 C CNN
+F 3 "" H 4500 3350 50  0000 C CNN
+	1    4500 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L?
+U 1 1 5C6F4E89
+P 5000 3900
+F 0 "L?" V 4950 3900 50  0000 C CNN
+F 1 "1uH" V 5100 3900 50  0000 C CNN
+F 2 "" H 5000 3900 50  0000 C CNN
+F 3 "" H 5000 3900 50  0000 C CNN
+	1    5000 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5C6F4ED4
+P 5400 3800
+F 0 "R?" V 5480 3800 50  0000 C CNN
+F 1 "5kΩ" V 5400 3800 50  0000 C CNN
+F 2 "" V 5330 3800 50  0000 C CNN
+F 3 "" H 5400 3800 50  0000 C CNN
+	1    5400 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5C6F4F37
+P 5850 2250
+F 0 "R?" V 5930 2250 50  0000 C CNN
+F 1 "940Ω" V 5850 2250 50  0000 C CNN
+F 2 "" V 5780 2250 50  0000 C CNN
+F 3 "" H 5850 2250 50  0000 C CNN
+	1    5850 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5C6F4F8A
+P 6450 2250
+F 0 "R?" V 6530 2250 50  0000 C CNN
+F 1 "10kΩ" V 6450 2250 50  0000 C CNN
+F 2 "" V 6380 2250 50  0000 C CNN
+F 3 "" H 6450 2250 50  0000 C CNN
+	1    6450 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3950 4500 4250
+Wire Wire Line
+	5400 4250 5400 3950
+Connection ~ 5000 4250
+Wire Wire Line
+	4500 3550 5400 3550
+Connection ~ 4500 3550
+Wire Wire Line
+	5400 3550 5400 3650
+Connection ~ 5000 3550
+$Comp
+L FDG1024NZ Q?
+U 1 1 5C6F5659
+P 6600 3800
+F 0 "Q?" H 6800 3875 50  0000 L CNN
+F 1 "FDG1024NZ" H 6800 3800 50  0000 L CNN
+F 2 "SC-70-6" H 6800 3725 50  0000 L CIN
+F 3 "" H 6600 3800 50  0000 L CNN
+	1    6600 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L FDG1024NZ Q?
+U 2 1 5C6F5692
+P 5950 3800
+F 0 "Q?" H 5800 3650 50  0000 L CNN
+F 1 "FDG1024NZ" H 5550 3550 50  0000 L CNN
+F 2 "SC-70-6" H 5600 3450 50  0000 L CIN
+F 3 "" H 5950 3800 50  0000 L CNN
+	2    5950 3800
+	-1   0    0    -1  
+$EndComp
+Connection ~ 5400 4250
+Wire Wire Line
+	5850 4000 5850 4250
+Wire Wire Line
+	6200 3550 6200 3850
+Connection ~ 6200 3850
+Wire Wire Line
+	6150 3850 6400 3850
+Wire Wire Line
+	6700 4250 6700 4000
+Wire Wire Line
+	6200 3550 5850 3550
+$Comp
+L R R?
+U 1 1 5C6F4FF5
+P 7900 3800
+F 0 "R?" V 7980 3800 50  0000 C CNN
+F 1 "1kΩ" V 7900 3800 50  0000 C CNN
+F 2 "" V 7830 3800 50  0000 C CNN
+F 3 "" H 7900 3800 50  0000 C CNN
+	1    7900 3800
+	1    0    0    -1  
+$EndComp
+Connection ~ 4500 4250
+$Comp
+L Q_NPN_BCE Q?
+U 1 1 5C6F6B8B
+P 6350 2900
+F 0 "Q?" H 6650 2950 50  0000 R CNN
+F 1 "Q_NPN_BCE" H 6400 2700 50  0000 R CNN
+F 2 "" H 6550 3000 50  0000 C CNN
+F 3 "" H 6350 2900 50  0000 C CNN
+	1    6350 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NPN_BCE Q?
+U 1 1 5C6F6BC6
+P 7050 2900
+F 0 "Q?" H 7350 2950 50  0000 R CNN
+F 1 "Q_NPN_BCE" H 7100 2700 50  0000 R CNN
+F 2 "" H 7250 3000 50  0000 C CNN
+F 3 "" H 7050 2900 50  0000 C CNN
+	1    7050 2900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 3100 6950 3200
+Wire Wire Line
+	6450 3100 6450 3200
+Wire Wire Line
+	5000 3350 5000 3600
+Wire Wire Line
+	5000 4200 5000 4250
+Wire Wire Line
+	4500 3500 4500 3650
+Wire Wire Line
+	4500 2900 4500 3200
+Connection ~ 5850 4250
+Connection ~ 6700 4250
+Wire Wire Line
+	7900 4250 4000 4250
+Connection ~ 5850 3550
+Wire Wire Line
+	6450 3200 6950 3200
+Wire Wire Line
+	6700 3200 6700 3600
+Connection ~ 6700 3200
+Wire Wire Line
+	7250 2900 7450 2900
+Wire Wire Line
+	7450 2900 7450 3350
+Wire Wire Line
+	7450 3350 5000 3350
+Wire Wire Line
+	3900 2900 6150 2900
+Connection ~ 4500 2900
+Wire Wire Line
+	6450 2400 6450 2700
+Wire Wire Line
+	5850 3600 5850 2400
+Wire Wire Line
+	6950 1950 6950 2700
+Wire Wire Line
+	3950 1950 6950 1950
+Wire Wire Line
+	6450 1950 6450 2100
+Wire Wire Line
+	5850 1950 5850 2100
+Connection ~ 6450 1950
+Connection ~ 5850 1950
+Wire Wire Line
+	7900 3950 7900 4250
+$Comp
+L C C?
+U 1 1 5C6FA749
+P 7650 2600
+F 0 "C?" V 7750 2700 50  0000 L CNN
+F 1 "32nF" V 7750 2350 50  0000 L CNN
+F 2 "" H 7688 2450 50  0000 C CNN
+F 3 "" H 7650 2600 50  0000 C CNN
+	1    7650 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7900 3650 7900 2600
+Wire Wire Line
+	7800 2600 8350 2600
+Wire Wire Line
+	7500 2600 6450 2600
+Connection ~ 6450 2600
+Connection ~ 7900 2600
 $EndSCHEMATC
